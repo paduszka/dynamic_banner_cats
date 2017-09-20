@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #baner {
+          width: 750px;
+          height: 200px;
+          position: absolute;
+          border: 4px solid pink;
+          border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-family: 'Roboto';
+      }
+
+      h1 {
+        color: #706f6f;
+        position: absolute;
+        top: 20px;
+      }
+
+      button {
+        width: 150px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: white;
+        border: 2px solid ;
+        border-color: #70dfdb;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #706f6f;
+        margin-left: 20px;
+        margin-right: 20px;
+
+      }
+
+      button:focus {
+        outline: 0;
+      }
+
+      .buttons {
+        position: absolute;
+        top: 100px;
+        left: 180px;
+      }
+
+      #btn3 {
+        position: absolute;
+        right: -10px;
+        bottom: 10px;
+        width: 150px;
+        height: 50px;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="init.js"></script>
+
+  </head>
+  <body>
+    <div id='baner'>
+      <h1>Ania lubi koty, a ma ich <span id='number'></span>.</h1>
+      <div class="buttons">
+        <button id='btn1'>Fajnie</button>
+        <button id='btn2'>Niefajnie</button>
+      </div>
+      <button id='btn3'>Od nowa</button>
+    </div>
+  </body>
+</html>
